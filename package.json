@@ -18,6 +18,7 @@
         "web-vitals": "^2.1.4"
     },
     "scripts": {
+        "start-react": "react-scripts start",
         "start": "concurrently \"react-scripts start\" \"wait-on http://localhost:3000 && electron .\"",
         "build": "react-scripts build",
         "electron-build": "npm run build && electron ."
