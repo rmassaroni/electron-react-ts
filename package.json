@@ -19,7 +19,7 @@
     },
     "scripts": {
         "start-react": "react-scripts start",
-        "start": "concurrently \"react-scripts start\" \"wait-on http://localhost:3000 && electron .\"",
+        "start": "concurrently \"react-scripts start\" \"wait-on http://localhost:3000 && electron . --disable-gpu\"",
         "build": "react-scripts build",
         "electron-build": "npm run build && electron ."
     },
@@ -43,7 +43,7 @@
     },
     "devDependencies": {
         "concurrently": "^8.2.2",
-        "electron": "^32.0.1",
+        "electron": "^32.3.2",
         "electron-is-dev": "^3.0.1",
         "wait-on": "^8.0.0"
     }
